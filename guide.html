@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>coffee</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/guide.css">
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  <div class="container header">
+    <div class="banner">
+      <ul id="ul1">
+        <li><img src="images/1.jpg"></li>
+        <li><img src="images/2.jpg"></li>
+        <li><img src="images/3.jpg"></li>
+      </ul>
+    </div>
+    <div class="nav">
+      <ul>
+        <li><a href="index.html">网站首页</a></li>
+        <li><a href="about.html">关于我们</a></li>
+        <li><a href="news.html">最新动态</a></li>
+        <li><a href="reveal.html">门店展示</a></li>
+        <li><a href="recommend.html">精品推荐</a></li>
+        <li><a href="guide.html">消费指南</a></li>
+        <li><a href="contact.html">联系我们</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container content">
+    <h3><a href="index.html">网站首页</a>&gt;消费指南</h3>
+    <div class="fl">
+    <span>@不要占用太多空间</span>
+    <p>进入咖啡馆选定座位后，不要占据太多空间。如果一个人在咖啡馆办公，不要让你的外套、包或是双脚占据另外一张椅子，要知道这不像在自己家里。我曾看到过一位顾客占据四张椅子。这样做不好，尤其是在咖啡店生意繁忙时。</p>
+    <span>@知道什么时候离开</span>
+    <p>在咖啡店高峰时期，要意识到是时候离开了。如果你想在咖啡店多呆几个小时，可以选择非高峰时间段（如避免早餐和午餐时间段）。此外，如果你需要接一个通话时间较长的电话，最好在店外通话，以免打扰其他顾客或泄露自己的隐私。</p>
+    <span>@保持轻声细语</span>
+    <p>无论是打电话还是和朋友聊天，都要保持适当的音量。声音太响不仅会影响他人，还会使人们听到你的谈话。</p>
+    <span>@保护自己的隐私</span>
+    <p>数据安全是一个值得关注的问题，你不仅需要留意自己在说什么，还要留意电脑频幕上显示的内容。这些都有可能泄露公司、客户或自己的机密信息。</p>
+    <span>@不要贪婪使用网络</span>
+    <p>虽然很多咖啡店、书店增加了很多网线，每个座位旁有足够的插座。但在人员较多的休息区，网络访问比较有限，有些人也许为了充电已等待很久，他们会向你投来不友好的眼色。所以注意不要下载容量太大的文件（如电影、直播等）。</p>
+    <span>@买些东西</span>
+    <p>进店后不买东西，会显得不太礼貌。如果自己带入食物或饮料会更糟。如果想在咖啡店内小坐一会儿，那么买点东西是个不错的主意。</p>
+    <span>@自己清理干净</span>
+    <p>虽然咖啡馆没有要求用完餐自己清理桌子，但这一举动会令店员赞赏你的习惯。</p>
+   </div>
+   <div class="fr">
+    <h2>精品推荐</h2>
+    <img src="images/1.jpg">
+    <h2>最新动态</h2>
+    <ul>
+      <li><a href="list.html">经典各式咖啡、欧式茶、花果茶
+      </a></li>
+      <li><a href="list.html">咖啡新品玻璃器具</a></li>
+      <li><a href="list.html">做出真正适合中国人的好咖啡</a></li>
+      <li><a href="list.html">咖啡拉花的9种窍门</a></li>
+      <li><a href="list.html">咖啡网站改版通知</a></li>
+      <li><a href="list.html">咖啡网站改版通知</a></li>
+    </ul>
+   </div>
+  </div>
+  <div class="container footer">
+    <img src="images/4.png">
+    <p class="fo1">
+      <a href="about.html" target="_self">关于我们</a><span>|</span>
+      <a href="recommend.html" target="_self">本店特色</a><span>|</span>
+      <a href="contact.html" target="_self">联系我们</a><span>|</span>
+      <a href="news.html" target="_self">最新动态</a><span>|</span>
+      <a href="guide.html" target="_self">消费指南</a>
+    </p>
+    <p class="fo2">版权所有:<span>&nbsp; &copy;20xx-20xx &nbsp;xxx咖啡厅网站&nbsp;</span></p>
+    <hr>
+  </div>
+    <script>
+    window.onload = function (){
+       var oUl = document.getElementById ('ul1');
+       var t,o;
+       var speed = 0;
+       var funny = function () {
+           t && clearInterval(t);
+           t = setInterval (function (){
+                speed -= .01/20;
+                if(speed<-.01){
+                    speed=0;
+                    oUl.appendChild (oUl.children[0]);
+                    t && clearInterval(t);
+                    t = null;
+                    o && clearTimeout(o);
+                    o=setTimeout(funny,1000);
+                    }
+               oUl.style.left = speed + "px";
+           }, 60);
+       }
+        funny ();
+   }
+</script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+@charset "utf-8";
+h4{
+	font-size: 18px;
+	text-align: center;
+	background: url('../images/menu.png');
+	color: #7e725e;
+	line-height: 40px;
+}
+p{
+	background: url('../images/menu.png');
+	color: #7e725e;
+	text-indent: 2em;
+	padding: 5px 50px;
+	line-height: 40px;
+}

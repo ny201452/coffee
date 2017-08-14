@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>coffee</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  <div class="container header">
+    <div class="banner">
+      <ul id="ul1">
+        <li><img src="images/1.jpg"></li>
+        <li><img src="images/2.jpg"></li>
+        <li><img src="images/3.jpg"></li>
+      </ul>
+    </div>
+    <div class="nav">
+      <ul>
+        <li><a href="index.html">网站首页</a></li>
+        <li><a href="about.html">关于我们</a></li>
+        <li><a href="news.htmle">最新动态</a></li>
+        <li><a href="reveal.html">门店展示</a></li>
+        <li><a href="recommend.html">精品推荐</a></li>
+        <li><a href="guide.html">消费指南</a></li>
+        <li><a href="contact.html">联系我们</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container content">
+    <h3><a href="index.html">首页</a>&gt;联系我们</h3>
+    <p><span>报名时间：</span>09：00至17：30</p>
+    <p><span>邮箱：</span>info@coffee.cn</p>
+    <p><span>联系电话：</span>132xxxxxxx00</p>
+    <p><span>联系人：</span>王经理</p>
+    <p><span>公司地址：</span>北京市大兴区绿地中央广场D座801室</p>
+  </div>
+  <div class="container footer">
+    <img src="images/4.png">
+    <p class="fo1">
+      <a href="about.html" target="_self">关于我们</a><span>|</span>
+      <a href="recommend.html" target="_self">本店特色</a><span>|</span>
+      <a href="contact.html" target="_self">联系我们</a><span>|</span>
+      <a href="news.html" target="_self">最新动态</a><span>|</span>
+      <a href="guide.html" target="_self">消费指南</a>
+    </p>
+    <p class="fo2">版权所有:<span>&nbsp; &copy;20xx-20xx &nbsp;xxx咖啡厅网站&nbsp;</span></p>
+    <hr>
+  </div>
+    <script>
+    window.onload = function (){
+       var oUl = document.getElementById ('ul1');
+       var t,o;
+       var speed = 0;
+       var funny = function () {
+           t && clearInterval(t);
+           t = setInterval (function (){
+                speed -= .01/20;
+                if(speed<-.01){
+                    speed=0;
+                    oUl.appendChild (oUl.children[0]);
+                    t && clearInterval(t);
+                    t = null;
+                    o && clearTimeout(o);
+                    o=setTimeout(funny,1000);
+                    }
+               oUl.style.left = speed + "px";
+           }, 60);
+       }
+        funny ();
+   }
+</script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

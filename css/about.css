@@ -1,0 +1,15 @@
+@charset "utf-8";
+h3,a{
+	font-size: 14px;
+	color: #7e725e;
+	line-height: 30px;
+}
+h3{
+	padding: 15px 10px;
+	background:url('../images/menu.png');
+}
+.jj{
+	line-height: 56px;
+	text-indent: 2em;
+	padding-left: 10px;
+}

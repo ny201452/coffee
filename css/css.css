@@ -1,0 +1,154 @@
+@charset "utf-8";
+body,div,ul,dl,h2,h3,h4,p{
+	margin:0;
+	padding:0;
+}
+ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: #fff;
+}
+body{
+	background: url('../images/bg.jpg');
+	font-family: "微软雅黑";
+}
+.container{
+	width: 940px;
+	height: auto;
+	margin: 0 auto;
+	padding: 0;
+	float: none;
+	display: block;
+}
+.nav{
+	width: 100%;
+	border-top: 2px solid #f96;
+	background: brown;
+}
+.nav ul{
+	height: 55px;
+	margin: 0 auto;
+}
+.nav li{
+	float: left;
+	padding: 0 37px;
+	margin: 0;
+}
+.nav li a:hover{
+	cursor: pointer;
+	font-size: 16px;
+	color: #f96;
+}
+.nav a{
+	text-align: center;
+	line-height: 48px;
+	color: #FFF;
+	font-size: 14px;
+	font-weight: bold;
+}
+.banner {
+  margin: 0 auto;
+  width: 940px;
+  overflow: hidden;
+  left: 940px;
+  height: 400px;
+  transition: .01s;
+}
+#ul1{
+	position: relative;
+}
+#ul1 li{
+	list-style-type: none;
+  float: left;
+  width: 940px;
+  height: 400px;
+}
+.banner .ul1 li img {
+  width: 940px;
+  height: 400px;
+}
+.content{
+	width: 940px;
+}
+.content .fl{
+	width: 660px;
+	float: left;
+	background: url('../images/menu.png');
+}
+.content .fl .p1{
+	float: left;
+	width: 210px;
+	height: 210px;
+	padding-right: 40px;
+	padding-top: 20px;
+}
+.content .fl p{
+	font-size: 18px;
+	color:  #7e725e;
+}
+.content ul{
+	float: left;
+	width: 650px;
+	height: 100%;
+}
+.content ul li{
+	float: left;
+}
+.content ul li img{
+	width: 160px;
+	height: 160px;
+}
+.content ul li .p2{
+	padding-right: 3.33px;
+}
+.content .fl p{
+	padding-top: 14px;
+}
+.content .fr{
+	padding-left: 40px;
+	width: 240px;
+	float: right;
+	background: url('../images/menu.png');
+}
+.content .fr h2{
+	font-size: 20px;
+	padding-top: 10px;
+	color:  #7e725e;
+}
+.content .fr img{
+	width: 200px;
+	height: 180px;
+	padding-bottom: 10px;
+}
+.content .fr ul{
+	width: 240px;
+}
+.content .fr ul a{
+	color: #7e725e;
+	line-height: 26px;
+	font-size: 14px;
+}
+.content .fr ul a:hover{
+	color: #fff;
+}
+.footer{
+	width: 940px;
+	background: url('../images/menu.png');
+}
+.footer img{
+	padding-left: 385px;
+}
+.footer .fo1,.footer .fo2{
+	color: #fff;
+	text-align: center;
+	font-size: 14px;
+}
+.footer .fo1 span{
+	padding: 10px;
+}
+.footer .fo2 span{
+	padding: 10px;
+	font-size: 12px;
+}

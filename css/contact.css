@@ -1,0 +1,8 @@
+@charset "utf-8";
+p{
+	font-size: 24px;
+	line-height: 70px;
+	color: #7e725e;
+	background: url('../images/menu.png');
+	padding-left: 70px;
+}
